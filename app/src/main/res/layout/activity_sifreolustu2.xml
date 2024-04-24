@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sifre.sifreolustu2">
+
+    <TextView
+        android:id="@+id/instaTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:text="Instagram Şifreniz:" />
+
+    <TextView
+        android:id="@+id/instaSifreTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/instaTex"
+        app:layout_constraintTop_toTopOf="@id/instaTex"
+        android:layout_marginLeft="20dp"
+        android:text="0000" />
+
+    <TextView
+        android:id="@+id/xTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instaTex"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:text="X Şifreniz:" />
+
+    <TextView
+        android:id="@+id/xSifreTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/xTex"
+        app:layout_constraintTop_toTopOf="@id/xTex"
+        android:layout_marginLeft="20dp"
+        android:text="0000" />
+
+    <TextView
+        android:id="@+id/facebookTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/xTex"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:text="Facebook Şifreniz:" />
+
+    <TextView
+        android:id="@+id/facebookSifreTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/facebookTex"
+        app:layout_constraintTop_toTopOf="@id/facebookTex"
+        android:layout_marginLeft="20dp"
+        android:text="000" />
+
+    <Button
+        android:id="@+id/aButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ana Sayfaya Dön"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebookSifreTex"
+        android:layout_marginTop="100dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GuvenlikAciklari</string>
+
+    <!-- Kötü Tasarlanmış Kimlik Doğrulama ve Yetkilendirme Açıklama -->
+    <string name="acikAciklama">Zayıf parolalar, oturum açma bilgilerinin güvensiz depolanması.</string>
+
+    <!-- Kötü Tasarlanmış Kimlik Doğrulama ve Yetkilendirme Önlemler -->
+    <string name="onlemlerAciklama">Güçlü parola politikaları, çift faktörlü kimlik doğrulama, güvenli oturum yönetimi.</string>
+
+</resources>

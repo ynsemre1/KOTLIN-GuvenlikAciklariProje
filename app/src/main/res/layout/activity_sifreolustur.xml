@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sifre.sifreolustur">
+
+    <TextView
+        android:id="@+id/sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olusan Sifre:"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/olusanSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#CB000000"
+        android:textColorHint="#151212"
+        app:layout_constraintTop_toBottomOf="@id/sifre"
+        app:layout_constraintStart_toStartOf="@id/sifre"
+        app:layout_constraintEnd_toEndOf="@id/sifre"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/kopyalaBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kopyala"
+        app:layout_constraintStart_toStartOf="@id/olusanSifre"
+        app:layout_constraintEnd_toEndOf="@id/olusanSifre"
+        app:layout_constraintTop_toBottomOf="@id/olusanSifre"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/anasayfaButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ana Sayfa"
+        app:layout_constraintStart_toStartOf="@id/kopyalaBut"
+        app:layout_constraintEnd_toEndOf="@id/kopyalaBut"
+        app:layout_constraintTop_toBottomOf="@id/kopyalaBut"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/xBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/anasayfaButt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/instaBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İnstagram"
+        app:layout_constraintStart_toEndOf="@id/xBut"
+        app:layout_constraintTop_toBottomOf="@id/anasayfaButt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/facebookBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@id/instaBut"
+        app:layout_constraintTop_toBottomOf="@id/anasayfaButt"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.test3">
+
+    <TextView
+        android:id="@+id/yapText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lütfen Aşağıda ki Testi Yapın"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/yapText"
+        app:layout_constraintEnd_toEndOf="@id/yapText"
+        app:layout_constraintTop_toBottomOf="@id/yapText"
+        android:padding="40dp"
+        android:layout_marginTop="1dp"
+        tools:ignore="MissingConstraints">
+
+    <CheckBox
+        android:id="@+id/cBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon Pilinizin Normalden Hızlı Bittiğini Düşünüyor musunuz?"
+        app:layout_constraintStart_toStartOf="@id/yapText"
+        app:layout_constraintEnd_toEndOf="@id/yapText"
+        app:layout_constraintTop_toBottomOf="@id/yapText"
+        />
+
+    <CheckBox
+        android:id="@+id/cBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefonunuzun Veri Kullanımı Normalden Yüksek veya Düşük mü?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox1"
+        android:layout_marginTop="5dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefonunuz Beklediğinizden Daha Çok Isınıyor mu?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox2"
+        android:layout_marginTop="5dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uygulamalar Beklenmedik Şekilde Açılıyor veya Kapanıyor mu?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox3"
+        android:layout_marginTop="5dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ağ Bağlantınızda Anormallik Görüyor musunuz?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox4"
+        android:layout_marginTop="5dp"
+      />
+
+    <CheckBox
+        android:id="@+id/cBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefonunuzda Bilinmeyen Uygulamalar Yüklü mü?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox5"
+        android:layout_marginTop="5dp"
+      />
+
+    <CheckBox
+        android:id="@+id/cBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Posta veya Sosyal Medya Hesaplarınızda Anormal Aktiviteler Gözlemliyor musunuz?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox6"
+        android:layout_marginTop="5dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefonunuzun Aniden Yavaşladığını Düşünüyor musunuz?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox7"
+        android:layout_marginTop="5dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefonunuz Kendiliğinden Açılıp Kapanıyor mu?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cBox8"
+        android:layout_marginTop="5dp"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bitirButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testi Bitir"
+        app:layout_constraintStart_toStartOf="@id/linearLay"
+        app:layout_constraintEnd_toEndOf="@id/linearLay"
+        app:layout_constraintTop_toBottomOf="@id/linearLay"
+        android:layout_marginBottom="40dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

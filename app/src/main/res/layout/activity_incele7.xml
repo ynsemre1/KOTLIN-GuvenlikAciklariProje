@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".incelemeler.incele7">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <!-- Kötü Niyetli Yazılım ve Güvenilmez Kaynaklar Başlık -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kötü Niyetli Yazılım ve Güvenilmez Kaynaklar:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Açık: Kötü niyetli uygulamaların veya güvenilmez kaynaklardan indirilen uygulamaların kullanılması -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Açık: Kötü niyetli uygulamaların veya güvenilmez kaynaklardan indirilen uygulamaların kullanılması."
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Önlemler: Yalnızca güvenilir uygulama mağazalarından indirme, uygulama izinlerini dikkatlice kontrol etme -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Önlemler: Yalnızca güvenilir uygulama mağazalarından indirme, uygulama izinlerini dikkatlice kontrol etme."
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/anaSayfaButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="AnaSayfa" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

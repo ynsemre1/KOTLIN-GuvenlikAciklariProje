@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.test4">
+
+    <TextView
+        android:id="@+id/dogrulukText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon Sağlık Durumu:"
+        app:layout_constraintStart_toStartOf="@id/rBar"
+        app:layout_constraintEnd_toEndOf="@id/rBar"
+        app:layout_constraintTop_toBottomOf="@id/rBar"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@id/dogrulukText"
+        app:layout_constraintTop_toTopOf="@id/dogrulukText"
+        app:layout_constraintBottom_toBottomOf="@id/dogrulukText"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/anasayfaButto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ana Sayfa"
+        app:layout_constraintStart_toStartOf="@id/programButton"
+        app:layout_constraintEnd_toEndOf="@id/programButton"
+        app:layout_constraintTop_toBottomOf="@id/programButton"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/programButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program"
+        app:layout_constraintStart_toStartOf="@id/dogrulukText"
+        app:layout_constraintEnd_toEndOf="@id/sonucText"
+        app:layout_constraintTop_toBottomOf="@id/dogrulukText"
+        android:layout_marginTop="30dp"/>
+
+    <ProgressBar
+        android:id="@+id/rBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/pText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Sonucunuz Normalden Düşük Çıktı Dilerseniz 'Program' butonundan önerdiğimiz Anti-Virüs programını indirerek güvenli bir tarama yapabilirsiniz."
+        android:gravity="center"
+        android:padding="70dp"
+        app:layout_constraintStart_toStartOf="@id/pText"
+        app:layout_constraintEnd_toEndOf="@id/pText"
+        app:layout_constraintTop_toBottomOf="@id/anasayfaButto"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

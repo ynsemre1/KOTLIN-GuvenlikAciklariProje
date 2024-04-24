@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.test1">
+
+    <TextView
+        android:id="@+id/bilgiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Casus Yazılımlar, telefonunuzda ki 'banka hesaplariniza', 'sosyal medya hesaplariniza' hatta 'ortam dinleme' tarzında zararlı boyutlara ulasabilir. Bu tür güvenlik tehditleri, kullanıcıların kişisel ve finansal bilgilerinin tehlikeye atılmasına neden olabilir. Bu konuda dikkatli olunması önemlidir. Kullanıcılar, kişisel güvenliklerini artırmak ve bu tür casus yazılımların oluşturabileceği riskleri minimize etmek cok önemlidir."
+        android:gravity="center"
+        android:padding="30dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/testeBaslaBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teste Basla"
+        app:layout_constraintStart_toStartOf="@id/bilgiText"
+        app:layout_constraintEnd_toEndOf="@id/bilgiText"
+        app:layout_constraintTop_toBottomOf="@id/bilgiText"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

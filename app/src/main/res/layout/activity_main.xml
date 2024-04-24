@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/girisText"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Mobil yazılımlarda güvenlik açıkları, kullanıcıların kişisel bilgilerini, cihazlarını ve verilerini tehlikeye atabilen sorunlardır."
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:padding="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="470dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/girisText"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/girisText"
+        app:layout_constraintEnd_toEndOf="@id/girisText"
+        android:text="Bazı Ornekleri İncelemek İçin Butona Tıklayabilirsin"
+        />
+
+    <Button
+        android:id="@+id/ornekButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incele"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eğer Cihazında Güvenlik Acıgı Oldugunu Dusunuyorsan Asagıdaki Butona Tıklayarak Teste Katılabilirsin"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ornekButton"
+        app:layout_constraintStart_toStartOf="@id/ornekButton"
+        app:layout_constraintEnd_toEndOf="@id/ornekButton"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teste Basla"
+        app:layout_constraintTop_toBottomOf="@id/testText"
+        app:layout_constraintStart_toStartOf="@id/testText"
+        app:layout_constraintEnd_toEndOf="@id/testText"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/sifreOlusturucuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Güvenlik Zafiyetlerini En Az Bicime Indırmek Icın Parola Olusturucumuzu Kullanabilirsin"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/testButton"
+        app:layout_constraintStart_toStartOf="@id/testButton"
+        app:layout_constraintEnd_toEndOf="@id/testButton"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/sifreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sifre Olusturucu"
+        app:layout_constraintTop_toBottomOf="@id/sifreOlusturucuText"
+        app:layout_constraintStart_toStartOf="@id/sifreOlusturucuText"
+        app:layout_constraintEnd_toEndOf="@id/sifreOlusturucuText"
+        android:layout_marginTop="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
